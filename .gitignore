@@ -1,0 +1,74 @@
+# =========================
+# Entorno virtual
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Variables de entorno
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Sistema operativo / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Datos crudos e intermedios
+# =========================
+data/raw/
+data/interim/
+
+# =========================
+# Datos procesados
+# Para la demo académica sí subimos los archivos finales
+# =========================
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/weather_unified.parquet
+!data/processed/weather_unified.csv
+!data/processed/weather_predictions.parquet
+
+# =========================
+# Modelos
+# Para la demo académica sí subimos el modelo final y métricas
+# =========================
+models/*
+!models/.gitkeep
+!models/temp_max_next_day_model.joblib
+!models/temp_max_next_day_metrics.json
+
+# =========================
+# Archivos temporales
+# =========================
+*.tmp
+*.bak
+*.zip
